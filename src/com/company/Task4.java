@@ -19,7 +19,7 @@ public class Task4 {
                     System.out.println(position);
                     position++;
                     row++;
-                } else if (position > k && size > position / row){
+                } else if (position > k && size > position / row) {
                     System.out.print("* ");
                     position++;
                 } else {

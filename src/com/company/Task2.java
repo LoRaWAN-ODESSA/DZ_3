@@ -12,7 +12,7 @@ public class Task2 {
                 length++;
                 num /= 10;
             }
-            if (i ==0) {
+            if (i == 0) {
                 minLength = length;
             }
             if (length >= maxLength) {
