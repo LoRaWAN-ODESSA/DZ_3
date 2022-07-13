@@ -2,11 +2,11 @@ package com.company;
 
 public class Task4 {
     public static void main(String[] args) {
-        int k = 21;
+        int k = 26;
         int position = 1;
         int row = 1;
         int size = 1;
-        while (size * size <= k) {
+        while (size * size < k) {
             size++;
         }
 
