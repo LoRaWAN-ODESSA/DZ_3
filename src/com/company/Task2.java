@@ -2,7 +2,7 @@ package com.company;
 
 public class Task2 {
     public static void main(String[] args) {
-        int[] array = {2, 34, 553, 34, 999999999, 9873, 1233, 22, 1000000000, 22222, 1, 398662829, 19283734, 3, 11, 987463};
+        int[] array = {22, 13, 55311, 56};
         int minNum = array[0], maxNum = 0, minLength = 1, maxLength = 0;
 
         for (int i = 0; i < array.length; i++) {
@@ -11,6 +11,9 @@ public class Task2 {
             while (num / 10 >= 1) {
                 length++;
                 num /= 10;
+            }
+            if (i ==0) {
+                minLength = length;
             }
             if (length >= maxLength) {
                 maxNum = array[i];

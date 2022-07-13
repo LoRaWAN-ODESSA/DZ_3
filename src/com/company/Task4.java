@@ -2,25 +2,32 @@ package com.company;
 
 public class Task4 {
     public static void main(String[] args) {
-        int k = 40;
+        int k = 21;
+        int position = 1;
+        int row = 1;
         int size = 1;
         while (size * size <= k) {
             size++;
         }
-        size--;
+
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
-                if (j != size - 1) {
-                    System.out.print("1 ");
-                    k--;
+                if (position <= k && size > position / row) {
+                    System.out.print(position + " ");
+                    position++;
+                } else if (position <= k && size == position / row) {
+                    System.out.println(position);
+                    position++;
+                    row++;
+                } else if (position > k && size > position / row){
+                    System.out.print("* ");
+                    position++;
                 } else {
-                    System.out.println("1 ");
-                    k--;
+                    System.out.println("* ");
+                    position++;
+                    row++;
                 }
             }
-        }
-        for (int i = 0; i < k; i++) {
-            System.out.print("1 ");
         }
     }
 }
